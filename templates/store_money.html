@@ -92,9 +92,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
     <script>
-        const contractAddress = '0x7C4e30a43ecC4d3231b5B07ed082329020D141F3'; // Replace with your contract address
-        const contractABI = [
-	{
+        const contractAddress = '0x94f8A58Cc3a11bA0B110a7FF136aaCE156b26540'; // Replace with your contract address
+        const contractABI = 
+        [
+            {
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -120,7 +121,7 @@
 		"stateMutability": "view",
 		"type": "function"
 	}
-];
+        ];
 
         const web3 = new Web3(Web3.givenProvider);
         const contract = new web3.eth.Contract(contractABI, contractAddress);
